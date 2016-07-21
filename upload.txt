@@ -1,0 +1,20 @@
+git init
+
+$ git status   //查看当前项目下所有文的状态，如果第一次，你会发现都红颜色的，因为它还没有交给git/github管理。
+
+$ git add .   //（.）点表示当前目录下的所有内容，交给git管理，也就是提交到了git的本地仓库。
+
+Ps:git的强大之处就是有一个本地仓库的概念，在没有网络的情况下可以先将更新的内容提交到本地仓库。
+
+$ git commit –m”new natter ”  //对你更新或修改了哪些内容做一个描述。
+
+$ git remote add origin git@github.com:defnngj/hibernate-demo.git
+
+//如果你是第一次提交项目，这一句非常重要，这是你本地的当前的项目与远程的哪个仓库建立连接。
+
+Ps: origin可以改为别人的名字，但是在你下一次push（提交）时，也要用你修改之后的名字。
+
+git remote -v  //查看你当前项目远程连接的是哪个仓库地址。
+
+$ git push -u origin master  //将本地的项目提交到远程仓库中。
+
